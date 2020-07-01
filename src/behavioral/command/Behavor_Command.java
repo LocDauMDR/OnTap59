@@ -16,6 +16,13 @@ public class Behavor_Command {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        GioHang gh = new GioHang();
+        Command c1 = new ChiTietGioHang("Quần áo", 1, 15000);
+        Command c2 = new ChiTietGioHang("Lon sữa", 2, 2400);
+        
+        gh.themVaoGioHang(c1);
+        gh.themVaoGioHang(c2);
+        gh.mua();
     }
     
 }

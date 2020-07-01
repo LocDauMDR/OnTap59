@@ -9,7 +9,7 @@ package behavioral.command;
  *
  * @author quang
  */
-public class ChiTietGioHang {
+public class ChiTietGioHang extends Command{
     String sanPham;
     int soLuong;
     int donGia;
@@ -24,24 +24,18 @@ public class ChiTietGioHang {
         return sanPham;
     }
 
-    public void setSanPham(String sanPham) {
-        this.sanPham = sanPham;
+    @Override
+    public void getInfo() {
+        System.out.println(toString());
     }
 
-    public int getSoLuong() {
-        return soLuong;
+    @Override
+    public int getCost() {
+        return donGia*soLuong;
     }
 
-    public void setSoLuong(int soLuong) {
-        this.soLuong = soLuong;
+    @Override
+    public String toString() {
+        return sanPham + "\t\t" + soLuong + "\t\t" + donGia;
     }
-
-    public int getDonGia() {
-        return donGia;
-    }
-
-    public void setDonGia(int donGia) {
-        this.donGia = donGia;
-    }
-    
 }

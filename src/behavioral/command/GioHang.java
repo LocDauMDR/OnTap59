@@ -25,10 +25,11 @@ public class GioHang {
     }
     
     public void mua() {
-        System.out.println("Sản phẩm" + "\t\t" + "Đơn giá");
+        System.out.println("Sản phẩm" + "\t" + "Số Lượng" + "\t" + "Đơn giá");
         for (int i = 0; i < gdmhs.size(); i++) {
             store.muaHang(gdmhs.get(i));
         }
-        System.out.println("Tổng: " + store.tongTien(gdmhs));
+        System.out.println("--------------------------------------------");
+        System.out.println("\t\t\t\tTổng: " + store.tongTien(gdmhs));
     }
 }
