@@ -10,5 +10,6 @@ package behavioral.command;
  * @author quang
  */
 public abstract class Command {
-    
+    public abstract void getInfo();
+    public abstract int getCost();
 }
