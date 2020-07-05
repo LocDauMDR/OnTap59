@@ -19,8 +19,8 @@ public class Main {
      */
     public static void main(String[] args) throws ParseException{
         // TODO code application logic here
-        SimpleDateFormat d = new SimpleDateFormat("dd-mm-yyyy");
-        HoaDonHeader hd = new HoaDonHeader("HD01", "Nguyễn Hoàng Nam", d.parse("23-5-2020"));
+        SimpleDateFormat d = new SimpleDateFormat("dd/MM/yy");
+        HoaDonHeader hd = new HoaDonHeader("HD01", "Nguyễn Hoàng Nam", d.parse("23/5/2020"));
         CTHD ct1 = new CTHD("OPPO", 1, 5000000, (float) 0.5);
         CTHD ct2 = new CTHD("Xiaomi", 1, 8000000, (float) 0.8);
         CTHD ct3 = new CTHD("SamSung", 1, 10000000, (float) 0.6);
